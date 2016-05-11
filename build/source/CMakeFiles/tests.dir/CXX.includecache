@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/janosch/c++/3_programmiersprachen-blatt/source/circle.cpp
+circle.hpp
+/home/janosch/c++/3_programmiersprachen-blatt/source/circle.hpp
+color.hpp
+/home/janosch/c++/3_programmiersprachen-blatt/source/color.hpp
+math.h
+-
+
+/home/janosch/c++/3_programmiersprachen-blatt/source/circle.hpp
+color.hpp
+/home/janosch/c++/3_programmiersprachen-blatt/source/color.hpp
+vec2.hpp
+/home/janosch/c++/3_programmiersprachen-blatt/source/vec2.hpp
+
+/home/janosch/c++/3_programmiersprachen-blatt/source/color.hpp
+
+/home/janosch/c++/3_programmiersprachen-blatt/source/vec2.cpp
+vec2.hpp
+/home/janosch/c++/3_programmiersprachen-blatt/source/vec2.hpp
+
+/home/janosch/c++/3_programmiersprachen-blatt/source/vec2.hpp
+

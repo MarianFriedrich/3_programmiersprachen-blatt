@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wall    CMakeFiles/tests.dir/color.cpp.o CMakeFiles/tests.dir/circle.cpp.o CMakeFiles/tests.dir/vec2.cpp.o CMakeFiles/tests.dir/tests.cpp.o  -o ../tests -rdynamic -lm 
