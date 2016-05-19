@@ -11,42 +11,48 @@ Circle::Circle(Vec2 const& ctr, float r, Color const& clr)
  */
 //AREA
 float Circle::area()const{
-	Circle temp = *this;
-	return temp.radius_ * temp.radius_ * M_PI;
+	return radius_ * radius_ * M_PI;
 }
 //RADIUS
 float Circle::radius()const{
-	return this -> radius_;
+	return radius_;
 }
 //COLOR
 Color Circle::color()const{
-	return this -> color_;
+	return color_;
 }
 //Center
 Vec2 Circle::center()const{
-	return this -> center_;
+	return center_;
 }
 
 float Circle::circumference() const{
-	Circle temp = *this;
-	return 2 * temp.radius_ * M_PI;
+	return 2 * radius_ * M_PI;
 }
 /*
  * SETTER
  */
 //RADIUS
 void Circle::radius(float r){
-	this -> radius_ = r;
+	radius_ = r;
 }
 //COLOR
 void Circle::color(Color const& clr){
-	this -> color_ = clr;
+	color_ = clr;
 }
 //Center
 void Circle::center(Vec2 const& ctr){
-	this -> center_ = ctr;
+	center_ = ctr;
 }
 /*
  *	FUNCTIONS
  */
-
+bool operator<(Circle const& circle1, Circle const& circle2){
+	return circle1.radius_ < circle2.radius_;
+}
+bool operator>(Circle const& circle1, Circle const& circle2){
+	return circle1.radius_ > circle2.radius_;
+}
+bool operator==(Circle const& circle1, Circle const& circle2){
+	return circle1.radius_ == circle2.radius_;
+}

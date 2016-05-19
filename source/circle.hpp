@@ -17,9 +17,16 @@ public:
 	void 	center(Vec2 const& ctr);
 	void 	radius(float r);
 	//Functions:
+	friend bool operator<(Circle const& circle1, Circle const& circle2);
+	friend bool operator>(Circle const& circle1, Circle const& circle2);
+	friend bool operator==(Circle const& circle1, Circle const& circle2);
 private:
 	Vec2 	center_;
 	float 	radius_;
 	Color 	color_;
 };
+
+
+
 #endif // CIRCLE_HPP
+

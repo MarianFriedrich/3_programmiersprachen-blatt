@@ -5,9 +5,21 @@ add_executable(tests
   vec2.cpp
   tests.cpp
 )
-target_link_libraries(tests
-  m)
-
-#add_executable(example
-#  example.cpp
-#)
+add_executable(swap
+  color.cpp
+  circle.cpp
+  vec2.cpp
+  swap.cpp
+)
+add_executable(example
+  example.cpp
+)
+add_executable(2bis4
+  aufgabe2bis4.cpp
+)
+add_executable(aufgabe5
+  aufgabe5.cpp
+)
+add_executable(filter
+  filter.cpp
+)
